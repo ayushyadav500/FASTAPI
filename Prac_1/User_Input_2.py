@@ -6,7 +6,14 @@ class Book(BaseModel):
     author: str
     description: str
     rating: int
-    
+
+    """def __init__(self, id, title, author, description, rating):
+        self.id = id
+        self.title = title
+        self.author = author
+        self.description = description
+        self.rating = rating"""
+
 
 # basemodel alrerady provides __init__ and validation logic, so we don't need to define it ourselves.
 # Note: avoid overriding BaseModel.__init__ with a positional signature.
